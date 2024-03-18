@@ -73,7 +73,6 @@ export const {
       }
       return true;
     },
-    
     ...authConfig.callbacks,
   },
 });

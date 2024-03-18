@@ -1,11 +1,14 @@
 "use client"
 
-import React from 'react'
+const HydrationTest = () => {
 
-const hydrationTest = () => {
+  const a = Math.random();
+  
+  console.log(a);
+
   return (
-    <div>hydrationTest</div>
+    <div>{a}</div>
   )
 }
 
-export default hydrationTest
+export default HydrationTest

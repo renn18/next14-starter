@@ -1,27 +1,27 @@
 "use client"
-
-import Link from 'next/link'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import React from 'react'
+import Link from "next/link"
+import { usePathname, useRouter, useSearchParams } from "next/navigation"
 
 const NavigationTestPage = () => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
+
+  // CLIENT SIDE NAVIGATION
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
   const q = searchParams.get("q")
 
-  console.log(q);
+  console.log(q)
 
-  const handleClick = () => {
+  const handleClick = ()=>{
     console.log("clicked")
-    router.replace("/")
-  };
+    router.forward()
+  }
 
   return (
     <div>
-        <Link href="/" prefetch={false}>Clck Here</Link>
-        <button onClick={handleClick}>Write and Redirect</button>
+      <Link href="/" prefetch={false}>Click here</Link>
+      <button onClick={handleClick}>Write and Redirect</button>
     </div>
   )
 }

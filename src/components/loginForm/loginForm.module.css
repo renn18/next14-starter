@@ -3,17 +3,17 @@
     flex-direction: column;
     text-align: center;
     gap: 30px;
-}
-
-.form input{
+  }
+  
+  .form input{
     padding: 20px;
     background-color: var(--bg);
     color: var(--textColor);
     border: none;
     border-radius: 5px;
-}
-
-.form button{
+  }
+  
+  .form button{
     padding: 20px;
     cursor: pointer;
     background-color: var(--btn);
@@ -21,4 +21,4 @@
     font-weight: bold;
     border: none;
     border-radius: 5px;
-}
+  }
